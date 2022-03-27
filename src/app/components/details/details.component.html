@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-6" *ngFor="let detail of Details">
+        <h5>{{detail.name.official}}:</h5>
+        <img class="photo" src="{{detail.flags.png}}"  >
+        <h4>Informations</h4>
+        <hr>
+        <ul class="list-group">
+          <li class="list-group-item">Name:  {{detail.name.common}}</li>
+          <li class="list-group-item">Capital: {{detail.capital}}</li>
+          <li class="list-group-item">Capital: {{detail.capital}}</li>
+          <li class="list-group-item">Capital: {{detail.capital}}</li>
+          <li class="list-group-item">Capital: {{detail.capital}}</li>
+        </ul>
+    </div>
+</div>

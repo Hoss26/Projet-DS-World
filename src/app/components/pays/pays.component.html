@@ -1,0 +1,12 @@
+<input [(ngModel)]="payslist" class="form-control" (keyup)="Filtrage()" placeholder="search country ">
+<div class="row" >
+    <div *ngFor="let pays of Payslist" class=" col-sm-3 ">
+        <div class="card">
+            <img class="photo" src="{{pays.flags.png}}"  >
+            <h5>{{pays.name.common}}</h5>
+            <button type="button" class="btn btn-primary" routerLink="/Details" (click)="addDetails(pays)" >Plus de détails</button>
+        </div>
+
+    </div>
+</div>
+
